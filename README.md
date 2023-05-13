@@ -1,4 +1,4 @@
-# Teste de digitaç
+# Teste de digitaçao
 >  Teste sua velocidade de digitação competindo contra seus amigos
 
 ## 
