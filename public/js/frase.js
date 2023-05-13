@@ -5,7 +5,7 @@ function fraseAleatoria() {
     /** iniciar spinner ao clicar botão */
     $("#spinner").toggle();
 
-    $.get("http://localhost:80/frases",trocaFraseAleatoria)
+    $.get("http://localhost:3000/frases",trocaFraseAleatoria)
     .done(function(){
         Swal.fire({
             position: 'top-end',
@@ -51,7 +51,7 @@ function buscaFrase() {
     var dados = {id : fraseId}; 
  
     /** passando objeto como segundo parâmetro */
-    $.get("http://localhost:80/frases", dados, trocaFrase)
+    $.get("http://localhost:3000/frases", dados, trocaFrase)
     .done(function(){
         Swal.fire({
             position: 'top-end',

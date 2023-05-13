@@ -121,7 +121,7 @@ function sincronizaPlacar(){
     };
 
     /** enviar para o servidor */
-    $.post("http://localhost:80/placar", dados, function(){
+    $.post("http://localhost:3000/placar", dados, function(){
     }).done(function(){
         Swal.fire({
             position: 'top-end',
@@ -144,7 +144,7 @@ function sincronizaPlacar(){
 
 
 function atualizaPlacar(){
-    $.get("http://localhost:80/placar",function(data){
+    $.get("http://localhost:3000/placar",function(data){
         $(data).each(function(){
             var linha = novaLinha(this.usuario, this.pontos);
             linha.find(".botao-remover").click(removeLinha);
