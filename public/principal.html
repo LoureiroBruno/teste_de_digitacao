@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Typer Test</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/libs/selectize.default.css">
+    <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center">Typer Test</h1>
+        <p class="frase center"></p>
+
+        <ul class="informacoes center ">
+            <img src="img/spinner.gif" alt="Spinner" id="spinner">
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span id="tamanho-frase">0</span> palavras
+            </li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="tempo-digitacao">0</span> segundos
+            </li>
+        </ul>
+
+        <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
+
+        <div class="botoes">
+            <!-- btn reiniciar partida -->
+            <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red tooltip"
+                title="Reiniciar Partida">
+                <i class="material-icons">restore</i>
+            </a>
+            <!-- btn ocultar e exibir placar -->
+            <a id="botao-placar" class="btn-floating btn-large waves-effect waves-light green tooltip"
+                title="Exibir | Ocultar Placar">
+                <i class="material-icons">assignment</i>
+            </a>
+            <!-- btn troca frase -->
+            <a id="botao-frase" class="btn-floating btn-large waves-effect waves-light blue tooltip" title="Trocar Frase">
+                <i class="material-icons">shuffle</i>
+            </a>
+            <!-- btn escolhe uma frase -->
+            <a id="botao-frase-id" class="btn-floating btn-large waves-effect waves-light cyan tooltip" title="Buscar">
+                <i class="material-icons">repeat_one</i>
+            </a>
+            <input id="frase-id" type="number" min="0" class="tooltip" title="Informe Número Frase - Clique Buscar">
+
+            <!-- btn sincroniza uma frase com o servidor -->
+            <a id="botao-sync" class="btn-floating btn-large waves-effect waves-light purple tooltip" title="Atualizar Pontuação">
+                <i class="material-icons">swap_vert</i>
+            </a>
+
+            <!-- single item select -->
+            <div class="select-usuarios">
+                <select id="usuarios">
+                <option value="" disabled selected>Adicione e Selecione Usuário</option>
+                <option value="Convidado">Convidado</option>
+                </select>
+            </div>
+        </div>
+
+        <ul class="center">
+            <li><span id="contador-caracteres">0</span> caracteres</li>
+            <li><span id="contador-palavras">0</span> palavras</li>
+        </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered highlight">
+                <thead class="cabecalho">
+                    <tr>
+                        <th>Usuário</th>
+                        <th>N.° de Palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <!-- importar scripts pasta js-->
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
+    <script src="js/frase.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/tooltipster.bundle.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+</body>
+
+</html>
