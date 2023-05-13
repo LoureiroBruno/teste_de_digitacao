@@ -7,4 +7,4 @@
 * npm start
 
 ### Acessar na url
-* localhost:30000
+* localhost:80
