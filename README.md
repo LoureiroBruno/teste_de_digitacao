@@ -1,7 +1,5 @@
-# INFO
->  JQuery: avance na biblioteca mais popular do mercado parte 2
-
-Teste sua velocidade de digitação competindo contra seus amigos
+# Teste de digitaç
+>  Teste sua velocidade de digitação competindo contra seus amigos
 
 ## 
 
